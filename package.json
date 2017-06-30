@@ -1,0 +1,17 @@
+{
+  "name": "inverse-dot",
+  "version": "0.0.1",
+  "description": "A Mocha reporter made for people",
+  "main": "index.js",
+  "author": "Shaine Hatch <shaine@squidtree.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "mocha ./test/index-test.js --reporter ./index"
+  },
+  "peerDependencies": {
+    "mocha": "^3.4.2"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2"
+  }
+}
