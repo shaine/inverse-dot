@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 const { describe, it } = require('mocha');
 
-describe('Personable reporter demo', () => {
+describe('Inverse dot reporter demo', () => {
     it('shows a success message', () => {
         expect(true).to.be.true;
     });

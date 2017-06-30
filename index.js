@@ -8,7 +8,7 @@ var supportsColor = process.browser ? null : require('supports-color');
 
 var { inherits } = utils;
 
-exports = module.exports = PersonableReporter;
+exports = module.exports = InverseDotReporter;
 
 /*
 ================================================================================
@@ -498,7 +498,7 @@ function list(failures) {
     });
 };
 
-function PersonableReporter(runner) {
+function InverseDotReporter(runner) {
     Base.call(this, runner);
 
     var self = this;
@@ -540,4 +540,4 @@ function PersonableReporter(runner) {
     });
 }
 
-inherits(PersonableReporter, Base);
+inherits(InverseDotReporter, Base);
