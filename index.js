@@ -468,6 +468,21 @@ function list(failures) {
             stack = stack.slice(index + 1);
         }
 
+        stack = stack
+            .split('\n')
+            .reduce(function (list, line) {
+                // filter out node_modules
+                if (new RegExp('/~/').test(line)) return list;
+
+                // remove left hand side of "compiled <- source" string
+                var trimmedLine = line
+                    .replace(/webpack:\/\//, '')
+                    .replace(/ <-.*$/, '');
+
+                return list.concat(trimmedLine)
+            }, [])
+            .join('\n');
+
         // uncaught
         if (err.uncaught) {
             msg = 'Uncaught ' + msg;
