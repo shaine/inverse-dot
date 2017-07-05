@@ -29,3 +29,8 @@ If using Karma, it is recommended that inverse-dot be used in conjunction with
 This plugin cedes control of reporting back to Mocha rather than requiring a
 separate Karma-specific reporting plugin. inverse-dot is built to handle Webpack/Karma
 integration if run in this context.
+
+## Credit
+
+Almost all of this code is ripped out of Mocha itself. The only changes made here
+are for process and/or formatting.
