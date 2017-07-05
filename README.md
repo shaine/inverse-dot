@@ -8,6 +8,8 @@ test. Reversing the ouput allows a user to read the first failure immediately
 of other libs in a unit test failure, so those lines are filtered out.
 - **Remove webpack cruft** - Removes webpack's contribution to the stack trace.
 
+![inverse-dot-demo](https://user-images.githubusercontent.com/204734/27875667-53567a34-6171-11e7-8fb4-a04cf95462ca.png)
+
 ## Installation
 
 ```
