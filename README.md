@@ -25,7 +25,7 @@ $ mocha --reporter inverse-dot test.js
 ```
 
 If using Karma, it is recommended that inverse-dot be used in conjunction with
-`[karma-mocha-own-reporter](https://www.npmjs.com/package/karma-mocha-own-reporter)`.
+[karma-mocha-own-reporter](https://www.npmjs.com/package/karma-mocha-own-reporter).
 This plugin cedes control of reporting back to Mocha rather than requiring a
 separate Karma-specific reporting plugin. inverse-dot is built to handle Webpack/Karma
 integration if run in this context.
